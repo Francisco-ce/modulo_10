@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* over-flow: hidden - esconde tudo qu ultrapassar o limite da tela */
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #000080;
+    padding-top: 16px;
+    color: white;
+}
+
+/* trava o cabeçalho na parte superior da tela - começando no superior 0 e esquerdo 0 */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Filho direto */
+
+header > .container,
+footer > .container {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+nav {
+    background-color: #00BFFF;
+    padding: 16px 0;
+    display: none;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 300px;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+}
+
+/* #carousel-imagens img {
+    height: 150px;
+} */
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li h3 {
+    margin: 10px 10px 10px 0;
+}
+
+.lista-veiculos img {
+    max-width: 100%;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+/* Arrumando apenas os itens centrais - no HTML foi colocado apenas nos "li" que ficaram no centro */
+.lista-central {
+    margin: 0 5%;
+}
+
+button {
+    width: 100%;
+    background-color: green;
+    color: white;
+    display: block;
+    padding: 8px 0;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    border-radius: 6px;
+}
+
+/* uso o display bolck pois ele está inline, sem ele não funciona */
+.lista-veiculos li strong {
+    margin: 8px 0;
+    display: block;
+}
+
+
+.form-campo {
+    margin-bottom: 16px;
+}
+
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+/* resize serve para não mexer no tamanho da area de texto  */
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height:32px;
+}
+  
+
+
